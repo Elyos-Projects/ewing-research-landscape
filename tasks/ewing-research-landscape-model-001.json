@@ -1,0 +1,36 @@
+{
+  "id": "ewing-research-landscape-model-001",
+  "title": "Define core data model (Org/Person/Grant/Effort/StudyRecord/Output) mapped to schema.org/ROR/Crossref/NCT/DOI",
+  "project": "ewing-research-landscape",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["open-science", "cancer-research", "public-data", "transparency", "ewing-sarcoma"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs) needs a shared data model before any data is ingested. Binding cancer guardrails: open-access / aggregate / organization-/award-level data ONLY -- no controlled-access (dbGaP, EGA), no individual-level biobank/clinical data, no identifiable patient data; proprietary research-intelligence databases (Dimensions/WoS/Scopus/Candid) are out of scope. Sources are open only (NIH RePORTER PD, CORDIS CC BY, UKRI OGL, ClinicalTrials.gov/AACT PD, ROR/Crossref/OpenAlex CC0). See PLAN.md.",
+  "objective": "Define the core entities (Organization, Person, Grant/Award, ResearchEffort, StudyRecord, Output, Source, Place) and their properties, reusing canonical vocabularies/IDs (schema.org, ROR, ORCID, Crossref Funder Registry, NCT, DOI/OpenAlex) wherever an equivalent exists, retaining original grant currency/amount, and deliberately omitting any quality/ranking field.",
+  "acceptanceCriteria": [
+    "All core entities defined with properties, datatypes, and cardinality.",
+    "Each entity/property mapped to a schema.org/ROR/ORCID/Crossref/NCT/DOI equivalent where one exists; gaps documented.",
+    "Grant carries original currency + amount as canonical, with a separate optional FX-normalized field.",
+    "No quality/ranking field exists (no-scorecard rule); conflicting-value representation specified (no forced single truth).",
+    "StudyRecord holds aggregate registry metadata only -- no participant/patient fields.",
+    "Every entity reserves a provenance slot (source IRI + license + retrievedAt) per the provenance model.",
+    "Published as a human-readable spec plus a machine artifact (JSON-Schema/SHACL stub)."
+  ],
+  "resources": [
+    "planning/projects/ewing-research-landscape/PLAN.md",
+    "https://schema.org/",
+    "https://ror.org/",
+    "https://www.crossref.org/services/funder-registry/",
+    "https://orcid.org/"
+  ],
+  "output": "A data-model specification document (model/README.md) plus a JSON-Schema/SHACL stub defining the core entities and their schema.org/ROR/Crossref/NCT/DOI mappings, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
