@@ -1,0 +1,35 @@
+{
+  "id": "ewing-research-landscape-viz-001",
+  "title": "Funder->institution->effort network visualization (no ranking)",
+  "project": "ewing-research-landscape",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). A read-only funder->institution->effort network visualization over the exports presents structure without any ranking/scorecard.",
+  "objective": "Build a read-only funder->institution->effort network visualization over the published exports, with no ranking and every element traceable to its source.",
+  "acceptanceCriteria": [
+    "Funder->institution->effort network visualization built read-only over the published exports.",
+    "No ranking/scorecard encoded (node size/order not presented as quality); every element traceable to its source.",
+    "No accounts/PII; static and source-linked."
+  ],
+  "output": "explorer/network-viz/ network visualization, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-export-001.json"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "ewing-research-landscape-privacy-001",
+  "title": "Living-investigator data + correction/removal policy",
+  "project": "ewing-research-landscape",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). Because the map names living investigators, it needs a privacy policy limiting fields to professional/public data plus a correction/removal process. Binding cancer guardrails: open-access / aggregate / organization-/award-level data ONLY -- no controlled-access (dbGaP, EGA), no individual-level biobank/clinical data, no identifiable patient data; proprietary research-intelligence databases (Dimensions/WoS/Scopus/Candid) are out of scope; no medical advice or clinical interpretation. See PLAN.md.",
+  "objective": "Define the living-investigator data policy (professional/public award-and-affiliation fields only) and a correction/removal request process, reviewed by the license reviewer.",
+  "acceptanceCriteria": [
+    "Living-investigator data policy documented: only professional/public award-and-affiliation fields; no identifiable personal or patient data.",
+    "Correction/removal request process defined with a response SLA and provenance-preserving handling.",
+    "Policy reviewed by the license reviewer before merge."
+  ],
+  "output": "docs/privacy-removal-policy.md documenting the living-investigator data + correction/removal policy, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-model-001.json"
+  ]
+}

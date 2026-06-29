@@ -1,0 +1,34 @@
+{
+  "id": "ewing-research-landscape-docs-001",
+  "title": "\"Known gaps\" / coverage ledger + data dictionary + usage/citation guide",
+  "project": "ewing-research-landscape",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). An honest known-gaps ledger, a data dictionary, and a usage/citation guide document coverage limits and required attributions.",
+  "objective": "Publish a known-gaps/coverage ledger, a field-level data dictionary (with source + license), and a usage/citation guide stating the no-ranking/no-advice limits.",
+  "acceptanceCriteria": [
+    "A known gaps ledger states honestly what is and is not covered (sources excluded, inclusion-query limits, regions/funders under-represented), updated each release.",
+    "Data dictionary documents every field + its source + license; usage guide states the no-ranking/no-advice limits and the required attributions."
+  ],
+  "output": "docs/gaps-ledger.md + docs/data-dictionary.md + docs/usage-citation-guide.md, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-explorer-001.json"
+  ]
+}

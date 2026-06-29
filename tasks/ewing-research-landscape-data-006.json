@@ -1,0 +1,35 @@
+{
+  "id": "ewing-research-landscape-data-006",
+  "title": "Add non-English national-charity funders (no paywalled aggregator)",
+  "project": "ewing-research-landscape",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). Non-English national-charity funders are added only from open/openly-licensed sources -- no paywalled/proprietary aggregator (refused per guardrails). Binding cancer guardrails: open-access / aggregate / organization-/award-level data ONLY -- no controlled-access (dbGaP, EGA), no individual-level biobank/clinical data, no identifiable patient data; proprietary research-intelligence databases (Dimensions/WoS/Scopus/Candid) are out of scope; no medical advice or clinical interpretation. See PLAN.md.",
+  "objective": "Add non-English national-charity funders sourced only from open/openly-licensed channels, with attributions recorded and the sourcing approach documented in the gaps ledger.",
+  "acceptanceCriteria": [
+    "Non-English national-charity funders added only from open/openly-licensed sources; no paywalled/proprietary aggregator is used (refused per guardrails).",
+    "Each source license-cleared in the allow-list with attribution; 100% provenance + retrievedAt.",
+    "Sourcing approach for under-covered languages/regions documented in the gaps ledger."
+  ],
+  "output": "data/intl-charities/ non-English national-charity funder records, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-license-001.json"
+  ]
+}

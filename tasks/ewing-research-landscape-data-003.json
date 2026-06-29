@@ -1,0 +1,35 @@
+{
+  "id": "ewing-research-landscape-data-003",
+  "title": "Integrate AACT/ClinicalTrials.gov study records as aggregate metadata only",
+  "project": "ewing-research-landscape",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). Registered-study records are integrated as aggregate registry metadata ONLY -- no participant/patient data of any kind. Binding cancer guardrails: open-access / aggregate / organization-/award-level data ONLY -- no controlled-access (dbGaP, EGA), no individual-level biobank/clinical data, no identifiable patient data; proprietary research-intelligence databases (Dimensions/WoS/Scopus/Candid) are out of scope; no medical advice or clinical interpretation. See PLAN.md.",
+  "objective": "Integrate AACT/ClinicalTrials.gov study records holding only aggregate registry metadata, via the approved channel, with full provenance.",
+  "acceptanceCriteria": [
+    "Study records hold only aggregate registry metadata (NCT ID, title, sponsor, phase, status, public summary). No participant/patient data of any kind (reviewer verifies explicitly).",
+    "Sourced via the approved AACT/ClinicalTrials.gov channel; acceptable-use terms respected (no implied endorsement); 100% provenance + retrievedAt."
+  ],
+  "output": "data/clinicaltrials/ aggregate study-record metadata, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-export-001.json",
+    "tasks/ewing-research-landscape-license-001.json"
+  ]
+}

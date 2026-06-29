@@ -1,0 +1,37 @@
+{
+  "id": "ewing-research-landscape-ci-001",
+  "title": "CI scaffold: schema + provenance-completeness + allow-list + freshness gates",
+  "project": "ewing-research-landscape",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). A CI gate quartet must enforce schema validity, provenance completeness, allow-list compliance, and freshness before any data is accepted.",
+  "objective": "Build the CI scaffold that fails on missing provenance, un-approved sources, missing retrievedAt snapshot dates, and schema/SHACL violations.",
+  "acceptanceCriteria": [
+    "CI fails on any assertion lacking a provenance link.",
+    "CI rejects data referencing a source not marked approved.",
+    "CI fails on any record missing a retrievedAt snapshot date.",
+    "CI validates records against the schema/SHACL shapes."
+  ],
+  "output": ".github/workflows + validation scripts implementing the schema/provenance/allow-list/freshness gate quartet, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-model-001.json",
+    "tasks/ewing-research-landscape-prov-001.json"
+  ]
+}

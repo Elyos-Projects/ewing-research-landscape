@@ -1,0 +1,36 @@
+{
+  "id": "ewing-research-landscape-recon-001",
+  "title": "ROR reconciliation for institutions/funders (human-confirmed)",
+  "project": "ewing-research-landscape",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). Institutions and funders in the NIH batch are reconciled to ROR (CC0) with human confirmation, precision over recall.",
+  "objective": "Reconcile institutions/funders to ROR via an explicit blocking-key strategy with human-confirmed, reversible, provenance-preserving merges.",
+  "acceptanceCriteria": [
+    "Institutions/funders matched to ROR via an explicit blocking-key strategy (precision over recall).",
+    "No automatic merge ships without human confirmation; merges reversible and provenance-preserving.",
+    "Zero confirmed false merges in the dedup audit sample; >=85% of institutions/funders carry a ROR ID."
+  ],
+  "output": "data/reconciliation/ror/ reconciled institution/funder records with ROR IDs, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-data-001.json",
+    "https://ror.org/"
+  ]
+}

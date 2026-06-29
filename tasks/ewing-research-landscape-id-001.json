@@ -1,0 +1,35 @@
+{
+  "id": "ewing-research-landscape-id-001",
+  "title": "Persistent-ID reuse policy (ROR/ORCID/Funder Registry/NCT/DOI; mint only Effort IDs on w3id.org/PURL)",
+  "project": "ewing-research-landscape",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). The project must reuse external persistent identifiers rather than mint its own, except for ResearchEffort IDs which need a host-independent namespace decoupled from any steward.",
+  "objective": "Define the persistent-ID reuse policy: reuse ROR/ORCID/Crossref Funder Registry/NCT/DOI, and mint only ResearchEffort IDs under a w3id.org/PURL namespace owned by the project.",
+  "acceptanceCriteria": [
+    "Persistent-ID reuse policy committed: reuse ROR/ORCID/Crossref Funder Registry/NCT/DOI rather than minting.",
+    "Only ResearchEffort IDs are minted, under a host-independent w3id.org/PURL namespace decoupled from any steward.",
+    "ID minting/governance rules documented (format, stability, project (not host) ownership)."
+  ],
+  "output": "docs/identifier-policy.md documenting the persistent-ID reuse + minting policy, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-model-001.json"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "ewing-research-landscape-family-001",
+  "title": "Non-clinical family/advocate orientation layer (\"not medical advice\", advocate-reviewed)",
+  "project": "ewing-research-landscape",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). A strictly non-clinical orientation layer helps families/advocates read the map; it carries a standing 'not medical advice' notice, source-links every statement, and is patient-advocate reviewed. Any content interpreting a treatment/trial for a patient is removed and redirected to high-risk sibling projects. Binding cancer guardrails: open-access / aggregate / organization-/award-level data ONLY -- no controlled-access (dbGaP, EGA), no individual-level biobank/clinical data, no identifiable patient data; proprietary research-intelligence databases (Dimensions/WoS/Scopus/Candid) are out of scope; no medical advice or clinical interpretation. See PLAN.md.",
+  "objective": "Write a strictly non-clinical family/advocate orientation layer with a standing 'This is not medical advice' notice, every statement source-linked, patient-advocate reviewed before publish.",
+  "acceptanceCriteria": [
+    "Strictly non-clinical orientation (who funds/works on Ewing; how to read the map); carries a standing 'This is not medical advice' notice and links every statement to its source.",
+    "Patient-advocate reviewed before publish; any content that interprets a treatment/trial for a patient is removed and redirected to the high-risk sibling projects."
+  ],
+  "output": "docs/family-orientation.md non-clinical family/advocate orientation layer, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-explorer-001.json"
+  ]
+}

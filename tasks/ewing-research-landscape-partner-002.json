@@ -1,0 +1,34 @@
+{
+  "id": "ewing-research-landscape-partner-002",
+  "title": "Secure steward adoption + >=1 documented citation/use",
+  "project": "ewing-research-landscape",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). Project 'shipped' requires a named steward committing to adopt/host/cite the map plus >=1 documented downstream use.",
+  "objective": "Secure a named advocacy/research steward's commitment to adopt/host and cite the map, and document >=1 concrete citation or downstream use.",
+  "acceptanceCriteria": [
+    "A named advocacy/research steward commits to adopt/host and cite the map.",
+    ">=1 concrete citation or downstream use is documented."
+  ],
+  "output": "docs/steward-adoption.md recording steward commitment + documented use, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-partner-001.json"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "ewing-research-landscape-wikidata-001",
+  "title": "Wikidata round-trip (push reconciled ROR/ORCID/Funder links)",
+  "project": "ewing-research-landscape",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). Reconciled, human-confirmed ROR/ORCID/Funder Registry links are pushed back to Wikidata (CC0) to strengthen the open-data graph.",
+  "objective": "Push reconciled ROR/ORCID/Crossref Funder Registry links to Wikidata under CC0, reversibly and provenance-preserving, pushing only verified links.",
+  "acceptanceCriteria": [
+    "Reconciled ROR/ORCID/Crossref Funder Registry links pushed to Wikidata under CC0 terms.",
+    "Round-trip is reversible and provenance-preserving; only verified/human-confirmed links pushed.",
+    "No ranking or interpretive claims added; edits follow Wikidata norms."
+  ],
+  "output": "data/wikidata-roundtrip/ pushed-link records + log, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-recon-002.json"
+  ]
+}
