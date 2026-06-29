@@ -1,0 +1,37 @@
+{
+  "id": "ewing-research-landscape-extract-001",
+  "title": "Build NIH RePORTER Ewing extractor (deterministic, flag-on-doubt)",
+  "project": "ewing-research-landscape",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). The first sourced slice comes from NIH RePORTER; the extractor must be deterministic, pull only from the approved channel, and flag ambiguity for human review. Binding cancer guardrails: open-access / aggregate / organization-/award-level data ONLY -- no controlled-access (dbGaP, EGA), no individual-level biobank/clinical data, no identifiable patient data; proprietary research-intelligence databases (Dimensions/WoS/Scopus/Candid) are out of scope; no medical advice or clinical interpretation. See PLAN.md.",
+  "objective": "Build a deterministic NIH RePORTER extractor that pulls only the approved channel via the published inclusion-query, never infers unknown values, and records extraction method + retrievedAt into provenance.",
+  "acceptanceCriteria": [
+    "Pulls only from the approved NIH RePORTER channel using the published inclusion-query.",
+    "Extraction is deterministic and assistive: maps authoritative fields; never infers unknown values; ambiguous fields are flagged for human review.",
+    "Records the extraction method and retrievedAt into every assertion's provenance."
+  ],
+  "output": "extractors/nih-reporter/ extractor implementation, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-ci-001.json",
+    "tasks/ewing-research-landscape-license-001.json",
+    "tasks/ewing-research-landscape-scope-001.json"
+  ]
+}

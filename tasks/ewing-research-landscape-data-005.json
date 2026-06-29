@@ -1,0 +1,35 @@
+{
+  "id": "ewing-research-landscape-data-005",
+  "title": "Integrate IRS 990 / ProPublica Nonprofit Explorer (US foundations)",
+  "project": "ewing-research-landscape",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). US foundations from IRS Form 990 / ProPublica Nonprofit Explorer are integrated only after the specific access-channel terms are verified and approved. Binding cancer guardrails: open-access / aggregate / organization-/award-level data ONLY -- no controlled-access (dbGaP, EGA), no individual-level biobank/clinical data, no identifiable patient data; proprietary research-intelligence databases (Dimensions/WoS/Scopus/Candid) are out of scope; no medical advice or clinical interpretation. See PLAN.md.",
+  "objective": "Integrate US-foundation records from IRS 990 / ProPublica Nonprofit Explorer after verifying access-channel terms, storing only public organization/grant-level fields with full provenance.",
+  "acceptanceCriteria": [
+    "IRS Form 990 / ProPublica Nonprofit Explorer US-foundation records integrated only after the access channel's terms are verified and recorded approved in the allow-list.",
+    "Only organization/grant-level public-filing fields stored; no patient/individual data; 100% provenance + retrievedAt.",
+    "Attribution/terms recorded; the CI gate quartet passes."
+  ],
+  "output": "data/irs990/ US-foundation records, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-license-001.json"
+  ]
+}

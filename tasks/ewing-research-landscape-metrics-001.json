@@ -1,0 +1,34 @@
+{
+  "id": "ewing-research-landscape-metrics-001",
+  "title": "Reuse-metrics tracking (downloads/queries)",
+  "project": "ewing-research-landscape",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). Reuse metrics (dataset downloads / explorer queries) are tracked without collecting PII or accounts to evidence outcomes.",
+  "objective": "Track and report reuse metrics (downloads/queries) without PII or accounts, documenting the methodology.",
+  "acceptanceCriteria": [
+    "Reuse metrics (dataset downloads / explorer queries) tracked without collecting PII or accounts.",
+    "Metrics reported per release; methodology documented."
+  ],
+  "output": "docs/reuse-metrics.md tracking reuse metrics + methodology, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-explorer-001.json"
+  ]
+}

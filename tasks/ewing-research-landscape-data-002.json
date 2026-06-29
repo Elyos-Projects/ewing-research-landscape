@@ -1,0 +1,37 @@
+{
+  "id": "ewing-research-landscape-data-002",
+  "title": "Integrate EU CORDIS (CC BY) + UKRI Gateway to Research (OGL) funders",
+  "project": "ewing-research-landscape",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). The second slice integrates EU CORDIS (CC BY 4.0) and UKRI Gateway to Research (OGL) funders, honoring attribution obligations. Binding cancer guardrails: open-access / aggregate / organization-/award-level data ONLY -- no controlled-access (dbGaP, EGA), no individual-level biobank/clinical data, no identifiable patient data; proprietary research-intelligence databases (Dimensions/WoS/Scopus/Candid) are out of scope; no medical advice or clinical interpretation. See PLAN.md.",
+  "objective": "Integrate CORDIS and UKRI GtR funder records via their approved channels with recorded CC BY/OGL attribution and full provenance.",
+  "acceptanceCriteria": [
+    "EU CORDIS (CC BY 4.0) and UKRI Gateway to Research (OGL) funder records integrated only via their approved allow-list channels.",
+    "CC BY / OGL attribution strings recorded and surfaced; per-source license honored.",
+    "100% of assertions carry resolvable provenance (source URL + license + retrievedAt) and pass the CI gate quartet.",
+    "Only organization/award/effort-level fields stored; no patient/individual-level data (reviewer verifies)."
+  ],
+  "output": "data/cordis-ukri/ integrated CORDIS + UKRI GtR funder records, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-export-001.json",
+    "tasks/ewing-research-landscape-license-001.json"
+  ]
+}

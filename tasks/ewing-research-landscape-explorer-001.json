@@ -1,0 +1,35 @@
+{
+  "id": "ewing-research-landscape-explorer-001",
+  "title": "Static public explorer over JSON-LD (no accounts/PII; every assertion shows its source)",
+  "project": "ewing-research-landscape",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). A static, no-account public explorer presents the data with every assertion source-linked and no ranking/scorecard.",
+  "objective": "Build a static public explorer over the JSON-LD exports with no accounts/PII, where every assertion shows its source and no ranking surface exists.",
+  "acceptanceCriteria": [
+    "Static public explorer over the JSON-LD exports; no accounts, no PII collected.",
+    "Every displayed assertion shows its source (source-linked) with license/retrievedAt.",
+    "No ranking/scorecard surface (no-scorecard rule); read-only over published exports."
+  ],
+  "output": "explorer/ static public explorer over the JSON-LD exports, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-dedup-001.json"
+  ]
+}

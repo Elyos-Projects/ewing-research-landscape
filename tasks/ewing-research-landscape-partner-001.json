@@ -1,0 +1,34 @@
+{
+  "id": "ewing-research-landscape-partner-001",
+  "title": "Steward + domain/advocate-reviewer outreach (status logged)",
+  "project": "ewing-research-landscape",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). The project needs a steward and domain/advocate/license reviewers; outreach must be initiated and its status logged honestly (no partner is yet secured).",
+  "objective": "Initiate steward + domain/advocate-reviewer outreach and identify a qualified source-license reviewer candidate, logging targets, messages, and status.",
+  "acceptanceCriteria": [
+    "Steward + domain/advocate-reviewer outreach initiated; targets and messages recorded.",
+    "Outreach status (contacted/responded/committed) logged and kept current.",
+    "A qualified source-license reviewer candidate is identified (hard M0-exit dependency; escalate per PLAN.md fallback if the seat stays empty)."
+  ],
+  "output": "docs/outreach-log.md recording steward/reviewer outreach targets and status, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md"
+  ]
+}

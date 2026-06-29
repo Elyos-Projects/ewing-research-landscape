@@ -1,0 +1,35 @@
+{
+  "id": "ewing-research-landscape-quality-001",
+  "title": "Automated anomaly/outlier flagging for review (assistive)",
+  "project": "ewing-research-landscape",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). Automated anomaly/outlier flagging surfaces candidates for human review only and never auto-edits records.",
+  "objective": "Build assistive anomaly/outlier flagging that surfaces explainable candidates for human review, never auto-editing records, with reversible provenance-preserving corrections.",
+  "acceptanceCriteria": [
+    "Automated anomaly/outlier flagging surfaces candidates for human review only; never auto-edits records.",
+    "Flags are explainable and link to the underlying assertions/provenance.",
+    "Confirmed corrections remain reversible and provenance-preserving."
+  ],
+  "output": "tools/anomaly-flagging/ assistive flagging tool, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-export-001.json"
+  ]
+}

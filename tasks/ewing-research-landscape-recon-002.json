@@ -1,0 +1,36 @@
+{
+  "id": "ewing-research-landscape-recon-002",
+  "title": "Crossref Funder Registry reconciliation + OpenAlex/DOI output linking",
+  "project": "ewing-research-landscape",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). Funders are reconciled to the Crossref Funder Registry (CC0) and outputs linked via OpenAlex/DOI (CC0), human-confirmed.",
+  "objective": "Reconcile funders to the Crossref Funder Registry and link outputs to OpenAlex/DOI identifiers, with human-confirmed, reversible, provenance-preserving merges.",
+  "acceptanceCriteria": [
+    "Funders reconciled to the Crossref Funder Registry via explicit matching; precision over recall; human-confirmed.",
+    "Outputs linked to OpenAlex/DOI identifiers where available; links carry provenance.",
+    "No automatic merge without human confirmation; merges reversible and provenance-preserving."
+  ],
+  "output": "data/reconciliation/funder-openalex/ reconciled funder + output-link records, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-data-002.json",
+    "https://www.crossref.org/services/funder-registry/"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "ewing-research-landscape-sustain-001",
+  "title": "Sustainability, hosting + reviewer-rotation/throughput plan",
+  "project": "ewing-research-landscape",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). A sustainability plan covers hosting, persistent-ID/PURL ownership surviving a steward change, and reviewer rotation/throughput.",
+  "objective": "Document the sustainability + hosting plan (PURL ownership survives steward change) and a reviewer-rotation/throughput plan.",
+  "acceptanceCriteria": [
+    "Sustainability + hosting plan documented (persistent-ID/PURL ownership survives a steward change).",
+    "Reviewer-rotation and review-throughput plan documented."
+  ],
+  "output": "docs/sustainability.md sustainability + reviewer-rotation plan, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-partner-002.json"
+  ]
+}

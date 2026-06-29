@@ -1,0 +1,34 @@
+{
+  "id": "ewing-research-landscape-refresh-001",
+  "title": "Scheduled refresh + staleness tracking across approved sources",
+  "project": "ewing-research-landscape",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). Approved sources are re-pulled on their recorded cadence with staleness recomputed and gates re-run; stale records are flagged, never silently shown as current.",
+  "objective": "Build scheduled refresh + staleness tracking that re-pulls each approved source on its cadence, recomputes staleness, re-runs gates, and flags stale records.",
+  "acceptanceCriteria": [
+    "Each approved source re-pulled on its recorded cadence; staleness recomputed; gates re-run.",
+    "Stale records flagged (never silently shown as current); >=90% of refreshed records within 90 days."
+  ],
+  "output": "tools/refresh/ scheduled refresh + staleness tracking, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-explorer-001.json"
+  ]
+}

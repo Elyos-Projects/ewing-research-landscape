@@ -1,0 +1,36 @@
+{
+  "id": "ewing-research-landscape-prov-001",
+  "title": "Ratify provenance mechanism + countable assertion unit + currency-normalization + freshness policy",
+  "project": "ewing-research-landscape",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). The map needs a ratified provenance mechanism, a countable assertion unit for coverage metrics, a currency-normalization rule, and a freshness policy before data ingestion.",
+  "objective": "Ratify the provenance model (source IRI + license + retrievedAt on every assertion), define the countable assertion unit, the original-currency-canonical normalization rule, and the freshness/staleness policy.",
+  "acceptanceCriteria": [
+    "Provenance mechanism defined: every assertion carries a source IRI + license + retrievedAt.",
+    "A countable assertion unit is defined for coverage/metrics.",
+    "Currency-normalization policy ratified: original currency + amount kept canonical; any normalized value carries FX rate/source/date.",
+    "Freshness/staleness policy defined (refresh cadence + stale records flagged, never silently shown as current)."
+  ],
+  "output": "docs/provenance-policy.md documenting the provenance mechanism, assertion unit, currency-normalization rule, and freshness policy, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-model-001.json"
+  ]
+}

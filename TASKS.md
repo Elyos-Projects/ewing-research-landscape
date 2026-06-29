@@ -299,3 +299,37 @@ field-by-field against `packages/schema/src/schemas.ts`:
 - **Risk discipline:** no `high`-risk task here — clinical interpretation is out of scope and routed
   to sibling projects; the single `medium`-on-safety task (family-001) requires patient-advocate
   review. ✔
+
+---
+
+## Generated task index
+
+Every table row above is now backed by a schema-valid `tasks/<id>.json` (validated against
+`packages/schema` taskSchema: all enums legal, `filename == id`, no duplicate ids, no extra keys).
+Each JSON carries the row's full `acceptanceCriteria` — the key-task criteria above are reused
+verbatim, and rows that listed no explicit criteria here had checkable criteria derived from their
+title + the milestone Definition of Done. `tasks/*.json` is the executable source of truth for the
+Elyos CLI; this table remains the human-readable backlog.
+
+**Fan-out:** none. Each named source (NIH RePORTER, EU CORDIS, UKRI GtR, AACT/ClinicalTrials.gov,
+IRS 990/ProPublica, Wikidata) already has its own dedicated backlog row, so each becomes one task —
+no row was multiplied across an enumerated dimension and no languages/datasets/beneficiaries were
+fabricated. Where a dimension is open-ended (`data-006` non-English funders; partner/steward "TO BE
+SECURED"), one representative task is emitted and expands on scope/partner confirmation.
+
+**Guardrails preserved in the JSONs:** the binding cancer guardrail (open/aggregate/org-/award-level
+data only; no controlled-access/patient/individual-level data; no proprietary research-intelligence
+databases; no medical advice/clinical interpretation) is carried in the `context` of every
+data/extraction task and the family layer; `data-006` explicitly *refuses* paywalled/proprietary
+aggregators. `verifiedNeed:false` on all tasks (no steward/partner secured yet).
+
+| Milestone | Task IDs (`ewing-research-landscape-*`) |
+| --- | --- |
+| M0 | `model-001` (seed), `license-001`, `prov-001`, `id-001`, `privacy-001`, `scope-001`, `ci-001`, `partner-001` |
+| M1 | `extract-001`, `data-001`, `recon-001`, `qa-001`, `export-001` |
+| M2 | `data-002`, `data-003`, `recon-002`, `dedup-001` |
+| M3 | `explorer-001`, `docs-001`, `family-001`, `metrics-001` |
+| M4 | `refresh-001`, `data-004`, `partner-002`, `sustain-001` |
+| Backlog | `data-005`, `data-006`, `wikidata-001`, `viz-001`, `quality-001`, `i18n-001` |
+
+Total: 31 task files (1 pre-existing seed + 30 generated).

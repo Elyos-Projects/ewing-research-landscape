@@ -1,0 +1,35 @@
+{
+  "id": "ewing-research-landscape-i18n-001",
+  "title": "Multilingual org/funder labels via Wikidata",
+  "project": "ewing-research-landscape",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). Multilingual organization/funder labels are attached from Wikidata (CC0), display-only, with provenance.",
+  "objective": "Attach multilingual organization/funder labels sourced from Wikidata (CC0) to records, with provenance and no ranking/interpretation.",
+  "acceptanceCriteria": [
+    "Multilingual organization/funder labels sourced from Wikidata (CC0) and attached to records.",
+    "Labels carry provenance (Wikidata IDs + retrievedAt); only CC0 labels used.",
+    "No ranking/interpretation; labels are display-only."
+  ],
+  "output": "data/i18n-labels/ multilingual label records, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-recon-001.json"
+  ]
+}

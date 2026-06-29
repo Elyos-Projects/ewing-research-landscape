@@ -1,0 +1,36 @@
+{
+  "id": "ewing-research-landscape-export-001",
+  "title": "CSV + JSON-LD export tooling under the persistent-ID namespace",
+  "project": "ewing-research-landscape",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). Reconciled records must be exportable as CSV + JSON-LD under the project's persistent-ID namespace, carrying per-source license/attribution.",
+  "objective": "Build CSV + JSON-LD export tooling that emits both formats under the w3id.org/PURL namespace and carries per-source license/attribution strings.",
+  "acceptanceCriteria": [
+    "CSV + JSON-LD export tooling produces both formats from the reconciled records.",
+    "Exports are emitted under the project's persistent-ID (w3id.org/PURL) namespace.",
+    "Per-source license/attribution strings are carried into the exports; CC0/PD components labeled and any CC BY-SA text segregated."
+  ],
+  "output": "tools/export/ CSV + JSON-LD export tooling, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-data-001.json",
+    "tasks/ewing-research-landscape-id-001.json"
+  ]
+}

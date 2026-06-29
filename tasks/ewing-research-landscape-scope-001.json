@@ -1,0 +1,34 @@
+{
+  "id": "ewing-research-landscape-scope-001",
+  "title": "Define + publish the reproducible Ewing inclusion-query (seed list validated)",
+  "project": "ewing-research-landscape",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). A reproducible, domain-validated Ewing inclusion-query (terms + curated seed list) is required before any extraction defines what is in scope.",
+  "objective": "Write and publish a version-controlled Ewing inclusion-query (MeSH/keyword terms + curated org/consortium seed list), validated by a domain reviewer, with precision/recall trade-offs documented.",
+  "acceptanceCriteria": [
+    "The Ewing inclusion-query (MeSH/keyword terms + curated org/consortium seed) is written, version controlled, and validated by a domain reviewer.",
+    "Precision/recall trade-offs and boundary decisions (e.g., PNET/Askin historical terms) are documented; selection limits are slated for the gaps ledger."
+  ],
+  "output": "scope/inclusion-query.md (version-controlled query + curated seed list), committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-model-001.json"
+  ]
+}

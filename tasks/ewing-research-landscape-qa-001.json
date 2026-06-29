@@ -1,0 +1,35 @@
+{
+  "id": "ewing-research-landscape-qa-001",
+  "title": "Accuracy/citation audit of M1 batch (stratified, >=95% verified)",
+  "project": "ewing-research-landscape",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). The M1 batch needs an independent, stratified accuracy/citation audit before sign-off.",
+  "objective": "Run a stratified accuracy/citation audit of the M1 batch by an auditor independent of the extractor, checking record-level citations with >=95% verified.",
+  "acceptanceCriteria": [
+    "A stratified sample (min >=200 or whole release; strata by source system and assertion type, with grant amount/currency a mandatory stratum) is checked against the cited record; >=95% verify.",
+    "The auditor is independent of the extractor of the sampled records.",
+    "Citations checked are record-level (database-level citations rejected); errors block sign-off."
+  ],
+  "output": "review/m1-accuracy-audit.md documenting the stratified audit, sample, and results, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-data-001.json"
+  ]
+}

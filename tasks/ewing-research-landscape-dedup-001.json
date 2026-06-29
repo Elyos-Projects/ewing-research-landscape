@@ -1,0 +1,35 @@
+{
+  "id": "ewing-research-landscape-dedup-001",
+  "title": "Cross-source org/effort dedup workflow (human-confirmed, reversible)",
+  "project": "ewing-research-landscape",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). Cross-source duplicates must be resolved on canonical IDs with a precision-tuned, human-confirmed, reversible workflow.",
+  "objective": "Build a cross-source org/effort dedup workflow anchored on canonical IDs plus blocking keys, with human-confirmed, reversible, provenance-preserving merges.",
+  "acceptanceCriteria": [
+    "Cross-source duplicates anchored on canonical IDs (ROR/Funder Registry/NCT/DOI) plus blocking keys; matcher tuned for precision over recall.",
+    "No automatic merge ships without human confirmation; merges reversible and provenance-preserving.",
+    "Zero confirmed false merges in the dedup audit sample."
+  ],
+  "output": "tools/dedup/ cross-source dedup workflow, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-recon-002.json"
+  ]
+}

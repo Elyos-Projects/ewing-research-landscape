@@ -1,0 +1,36 @@
+{
+  "id": "ewing-research-landscape-data-004",
+  "title": "Scale to targets (>=300 orgs / >=1,500 grants / >=150 study records across >=4 sources)",
+  "project": "ewing-research-landscape",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). The shipped milestone scales the map to its coverage targets across >=4 approved sources, preserving 100% provenance and original currency. Binding cancer guardrails: open-access / aggregate / organization-/award-level data ONLY -- no controlled-access (dbGaP, EGA), no individual-level biobank/clinical data, no identifiable patient data; proprietary research-intelligence databases (Dimensions/WoS/Scopus/Candid) are out of scope; no medical advice or clinical interpretation. See PLAN.md.",
+  "objective": "Scale the dataset to >=300 organizations, >=1,500 grants, and >=150 study records across >=4 approved sources, with 100% provenance and original currency retained.",
+  "acceptanceCriteria": [
+    "Scale targets met: >=300 organizations, >=1,500 grants, >=150 study records across >=4 approved sources.",
+    "100% provenance + retrievedAt maintained; 100% original currency retained (FX-normalized values carry rate/source/date).",
+    "Only open/aggregate/org-/award-level data; no patient/controlled-access data (license + domain reviewers verify)."
+  ],
+  "output": "data/ scaled dataset meeting the coverage targets, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "tasks/ewing-research-landscape-dedup-001.json",
+    "tasks/ewing-research-landscape-license-001.json"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "ewing-research-landscape-license-001",
+  "title": "Source allow-list schema + licensing-gate + cancer-guardrail + no-proprietary policy",
+  "project": "ewing-research-landscape",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "open-science",
+    "cancer-research",
+    "public-data",
+    "transparency",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, source-linked map of the Ewing Sarcoma research ecosystem (organizations, grants/awards, research efforts, aggregate registered-study records, and public outputs). Before any source is touched, the project needs a source allow-list schema plus a binding licensing gate and cancer/no-proprietary guardrail. Binding cancer guardrails: open-access / aggregate / organization-/award-level data ONLY -- no controlled-access (dbGaP, EGA), no individual-level biobank/clinical data, no identifiable patient data; proprietary research-intelligence databases (Dimensions/WoS/Scopus/Candid) are out of scope; no medical advice or clinical interpretation. See PLAN.md.",
+  "objective": "Define the sources/allowlist.yml schema and the licensing-gate policy that categorically rejects patient-level/controlled-access data and proprietary research-intelligence databases, with per-access-channel rights verification and anti-laundering controls.",
+  "acceptanceCriteria": [
+    "sources/allowlist.yml schema defines: name, custodian, URL/API, format, license + license URL, redistribution terms, attribution string, refresh cadence, and status: approved|rejected|pending.",
+    "Policy categorically rejects (a) any patient-level/controlled-access data and (b) proprietary research-intelligence databases; anti-laundering controls (record-level citations, contributor attestation, proprietary-distinctive-field spot-checks) are specified.",
+    "Per-access-channel rights-verification requirement documented ('open record' != 'open API terms')."
+  ],
+  "output": "sources/allowlist.schema.(yml|json) plus docs/licensing-policy.md defining the allow-list schema, licensing gate, cancer guardrail, and no-proprietary policy, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "resources": [
+    "PLAN.md",
+    "TASKS.md"
+  ]
+}
